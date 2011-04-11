@@ -4,6 +4,8 @@ set :rvm_ruby_string, '1.9.2@subtweet'
 set :rvm_type, :system
 if ENV["RAILS_ENV"] == "stage"
   set :application, "stage"
+elsif ENV["RAILS_ENV"] == "production"
+  set :application, "production"
 else
   set :application, "test"
 end
