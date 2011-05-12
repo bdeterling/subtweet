@@ -20,7 +20,7 @@ class Tweet
   end  
 
   def to_s
-    "User: #{account.screen_name}, Text: #{text}, Time: #{Time.parse(created_at)}"
+    "User: #{account.screen_name}, Text: #{text}, Time: #{created_at}"
   end
 
 end

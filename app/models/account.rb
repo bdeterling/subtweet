@@ -40,9 +40,15 @@ class Account
 
   def last_n_tweets(n=5)
     #http://api.twitter.com/1/statuses/user_timeline/#{tweep[:screen_name]}.json?count=#{@count}"
-    results = GrackleClient.statuses.user_timeline.json :id => id, :count => n
-    results.map do |r|
-      Tweet.new(self, r)
+    tweets = []
+    while tweets.size < n
+      results = GrackleClient.statuses.user_timeline.json :id => id, :count => n*2 # just to be sure; some tweets get removed
+      break if results.size == 0
+      results.map do |r|
+        tweets << Tweet.new(self, r)
+        break if tweets.size >= n
+      end
     end
+    tweets
   end
 end
