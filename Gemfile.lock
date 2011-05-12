@@ -37,17 +37,29 @@ GEM
       net-sftp (>= 2.0.0)
       net-ssh (>= 2.0.14)
       net-ssh-gateway (>= 1.0.0)
+    chunky_png (1.1.1)
     columnize (0.3.2)
+    compass (0.11.1)
+      chunky_png (~> 1.1)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+    curb (0.7.15)
     dynamic_form (1.1.4)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     foreigner (0.9.1)
+    fssm (0.2.7)
+    grackle (0.1.10)
+      json
+      mime-types
+      oauth
     growl (1.0.3)
     highline (1.6.1)
     i18n (0.5.0)
     jquery-rails (0.2.7)
       rails (~> 3.0)
       thor (~> 0.14.4)
+    json (1.5.1)
     less (1.2.21)
       mutter (>= 0.4.2)
       treetop (>= 1.4.2)
@@ -69,6 +81,7 @@ GEM
     net-ssh (2.1.4)
     net-ssh-gateway (1.0.1)
       net-ssh (>= 1.99.1)
+    oauth (0.4.4)
     polyglot (0.3.1)
     rack (1.2.2)
     rack-mount (0.6.14)
@@ -104,6 +117,7 @@ GEM
       ruby-debug-base19 (>= 0.11.19)
     ruby_core_source (0.1.5)
       archive-tar-minitar (>= 0.5.2)
+    sass (3.1.1)
     shoulda (2.11.3)
     simplecov (0.4.2)
       simplecov-html (~> 0.4.4)
@@ -119,13 +133,17 @@ PLATFORMS
 
 DEPENDENCIES
   capistrano
+  compass
+  curb
   dynamic_form
   foreigner
+  grackle
   growl
   jquery-rails
   less
   mocha
   mysql
+  oauth
   rails (= 3.0.6)
   rails3-generators
   rails3-jquery-autocomplete

@@ -46,3 +46,7 @@ gem "rails3-generators", :group => :development # shoulda doesn't have generator
 gem 'dynamic_form' # this used to be built-in, e.g. f.error_messages
 gem 'jquery-rails'
 gem 'rails3-jquery-autocomplete'
+gem 'oauth'
+gem 'grackle'
+gem 'curb'
+gem 'compass'
