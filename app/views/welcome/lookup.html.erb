@@ -1,0 +1,5 @@
+<%= @account %>
+<hr/>
+<ul>
+<%= @account.last_n_tweets(5).map { |t| "<li>#{t}</li>" }.join.html_safe %>
+</ul>

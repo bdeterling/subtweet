@@ -1,0 +1,9 @@
+<% @tweets.each do |tweet| %>
+  <% name = tweet.account.screen_name %>
+  <div class="tweet user_<%= name %>" data-name="<%= name %>" data-time="<%= tweet.created_at.to_s(:app_sort_time) %>">
+    <div class="image"><img src="<%= tweet.account.profile_image_url %>"></img></div>
+    <div class="header"><%= name %></div>
+    <div class="time"><a title="Go to original tweet" href="https://twitter.com/<%= name %>/status/<%= tweet.id %>"><%= time_ago_in_words(tweet.created_at) %> ago</a></div>
+    <div class="text"><%= tweet.text.html_safe %></div>
+  </div>
+<% end %>

@@ -1,0 +1,177 @@
+// This import applies a global reset to any page that imports this stylesheet.
+@import "blueprint/reset";
+
+// To configure blueprint, edit the partials/base.sass file.
+@import "partials/base";
+
+// Import all the default blueprint modules so that we can access their mixins.
+@import "blueprint";
+
+// Combine the partials into a single screen stylesheet.
+@import "partials/page";
+@import "partials/form";
+@import "partials/overrides";
+@import "compass/layout/sticky-footer";
+@include sticky-footer(45px);
+
+$lightGray: rgb(194,194,194);
+$lightGrayGradient: rgb(252,252,252);
+$mediumGray: rgb(80,80,80);
+$mediumGrayGradient: rgb(248,248,248);
+$darkGray: rgb(54,54,54);
+
+$text-color: #654b24;  // from jquery pepper grinder theme
+$page-background-color: #f8f7f6;
+$background-color: #d9d6c4; 
+$background-theme: url(../images/ui-bg_fine-grain_10_f8f7f6_60x60.png) 50% 50% repeat;
+
+body.bp {
+  @include container;
+  font-family:  Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+  overflow: auto;
+  background-color: $page-background-color;
+  border-top: 0;
+  border-bottom: 0;
+
+  a {
+    text-decoration: none;
+    :hover {
+      color: $mediumGray;
+    }
+  }
+
+  #root {
+    border-top: 0;
+    border-bottom: 0;
+  }
+
+  #header {
+    border-bottom: 6px double $text-color;
+    padding: 10px 15px 10px 15px;
+    border-top: 0;
+    h1 {
+      font-size: 2.0em;
+      margin: 0;
+    }
+    h2 {
+      font-size: 1.2em;
+    }
+  } 
+  #container {
+    padding-top: 10px;
+    overflow: visible;
+    border-top: 0;
+    border-bottom: 0;
+  }
+  #root_footer {
+    border-top: 0;
+    border-bottom: 0;
+  }
+  #footer {
+    text-align: center;
+    border-top: 0;
+    border-bottom: 0;
+  }
+  #footer_content {
+    padding-top: 10px;
+    border-top: 6px double $text-color;
+    border-bottom: 0;
+  }
+}
+
+.users {
+  @include prepend(1);
+  @include column(11);
+
+  button {
+    width: 125px;
+  }
+
+  input[type=text].invalid {
+    border: 1px solid red;
+    color: red;
+  }
+}
+
+.tweets {
+  button {
+    vertical-align: top;
+  }
+  .tweet {
+    border: 1px solid #ccc;
+    padding: 5px 10px 5px 5px;
+    margin: 3px;
+    width: 370px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background: $background-theme;
+    clear: both;
+  }
+  .image {
+    margin-right: 4px;
+    float: left;
+  }
+  .header {
+    font-weight: bold;
+    float: left;
+  }
+  .time {
+    float: right;
+  }
+  .text {
+    margin-left: 52px;
+    clear: right;
+  }
+}
+
+label, span.label, input[type=text], input[type=password], select, textarea {
+  color: $text-color;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+input[type=text], input[type=password], textarea {
+  padding: 3px;
+  border: 1px solid $lightGray;
+  box-shadow: rgba(0,0,0,0.18) 0px 0px 4px;
+  -moz-box-shadow: rgba(0,0,0,0.18) 0px 0px 4px;
+  -webkit-box-shadow: rgba(0,0,0,0.18) 0px 0px 4px;
+  background: -webkit-gradient(linear, left top, left 18, from(white), color-stop(4%, $mediumGrayGradient), to(white));
+  background: -moz-linear-gradient(top, white, $mediumGrayGradient 1px, white 18px);
+
+  :focus {
+    border-color: rgb(13,136,216);
+    box-shadow: rgba(0,114,188,.65) 0px 0px 6px;
+    -moz-box-shadow: rgba(0,114,188,.65) 0px 0px 6px;
+    -webkit-box-shadow: rgba(0,114,188,.65) 0px 0px 6px;
+    background: -webkit-gradient(linear, left top, left 18, from(rgb(255,255,255)), color-stop(4%, rgb(233,243,249)), to(rgb(255,255,255)));
+    background: -moz-linear-gradient(top, rgb(255,255,255), rgb(233,243,249) 1px, rgb(255,255,255) 18px);
+  }
+}
+
+
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/* End: Recommended Isotope styles */
+

@@ -1,0 +1,18 @@
+<div class="users">
+  <% @names.each do |name| %>
+    <div class="user" data-name="<%= name %>">
+      <label>User: </label><input type="text" class="tweep" value="<%= name %>"/>
+      <button class="loading_tweets ui-button ui-button-text-only ui-widget ui-state-default ui-corner-all">
+      <span class="ui-button-text">Loading...</span>
+      </button>
+    </div>
+  <% end %>
+  <div class="user">
+    <label>User: </label><input type="text" class="tweep empty_tweep"/>
+    <button class="load_tweets ui-button ui-button-text-only ui-widget ui-state-default ui-corner-all">
+    <span class="ui-button-text">Load Tweets</span>
+    </button>
+  </div>
+</div>
+<div class="tweets">
+</div>
