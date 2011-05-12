@@ -614,40 +614,41 @@ body.bp #footer_content {
   padding: 5px 10px 5px 5px;
   margin: 3px;
   width: 370px;
+  height: 68px;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   background: url(../images/ui-bg_fine-grain_10_f8f7f6_60x60.png) 50% 50% repeat;
   clear: both;
 }
-/* line 111, ../../../app/stylesheets/screen.scss */
+/* line 112, ../../../app/stylesheets/screen.scss */
 .tweets .image {
   margin-right: 4px;
   float: left;
 }
-/* line 115, ../../../app/stylesheets/screen.scss */
+/* line 116, ../../../app/stylesheets/screen.scss */
 .tweets .header {
   font-weight: bold;
   float: left;
 }
-/* line 119, ../../../app/stylesheets/screen.scss */
+/* line 120, ../../../app/stylesheets/screen.scss */
 .tweets .time {
   float: right;
 }
-/* line 122, ../../../app/stylesheets/screen.scss */
+/* line 123, ../../../app/stylesheets/screen.scss */
 .tweets .text {
   margin-left: 52px;
   clear: right;
 }
 
-/* line 128, ../../../app/stylesheets/screen.scss */
+/* line 129, ../../../app/stylesheets/screen.scss */
 label, span.label, input[type=text], input[type=password], select, textarea {
   color: #654b24;
   font-weight: bold;
   font-size: 1.3em;
 }
 
-/* line 134, ../../../app/stylesheets/screen.scss */
+/* line 135, ../../../app/stylesheets/screen.scss */
 input[type=text], input[type=password], textarea {
   padding: 3px;
   border: 1px solid #c2c2c2;
@@ -657,7 +658,7 @@ input[type=text], input[type=password], textarea {
   background: -webkit-gradient(linear, left top, left 18, from(white), color-stop(4%, #f8f8f8), to(white));
   background: -moz-linear-gradient(top, white, #f8f8f8 1px, white 18px);
 }
-/* line 143, ../../../app/stylesheets/screen.scss */
+/* line 144, ../../../app/stylesheets/screen.scss */
 input[type=text] :focus, input[type=password] :focus, textarea :focus {
   border-color: #0d88d8;
   box-shadow: rgba(0, 114, 188, 0.65) 0px 0px 6px;
@@ -668,7 +669,7 @@ input[type=text] :focus, input[type=password] :focus, textarea :focus {
 }
 
 /**** Isotope CSS3 transitions ****/
-/* line 158, ../../../app/stylesheets/screen.scss */
+/* line 159, ../../../app/stylesheets/screen.scss */
 .isotope,
 .isotope .isotope-item {
   -webkit-transition-duration: 0.8s;
@@ -676,14 +677,14 @@ input[type=text] :focus, input[type=password] :focus, textarea :focus {
   transition-duration: 0.8s;
 }
 
-/* line 164, ../../../app/stylesheets/screen.scss */
+/* line 165, ../../../app/stylesheets/screen.scss */
 .isotope {
   -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
   transition-property: height, width;
 }
 
-/* line 170, ../../../app/stylesheets/screen.scss */
+/* line 171, ../../../app/stylesheets/screen.scss */
 .isotope .isotope-item {
   -webkit-transition-property: -webkit-transform, opacity;
   -moz-transition-property: -moz-transform, opacity;
