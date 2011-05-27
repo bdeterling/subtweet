@@ -517,7 +517,7 @@ html, body {
   height: 45px;
 }
 
-/* line 28, ../../../app/stylesheets/screen.scss */
+/* line 29, ../../../app/stylesheets/screen.scss */
 body.bp {
   width: 950px;
   margin: 0 auto;
@@ -529,60 +529,89 @@ body.bp {
   border-top: 0;
   border-bottom: 0;
 }
-/* line 36, ../../../app/stylesheets/screen.scss */
+/* line 37, ../../../app/stylesheets/screen.scss */
 body.bp a {
   text-decoration: none;
 }
-/* line 38, ../../../app/stylesheets/screen.scss */
+/* line 39, ../../../app/stylesheets/screen.scss */
 body.bp a :hover {
   color: #505050;
 }
-/* line 43, ../../../app/stylesheets/screen.scss */
+/* line 44, ../../../app/stylesheets/screen.scss */
 body.bp #root {
   border-top: 0;
   border-bottom: 0;
 }
-/* line 48, ../../../app/stylesheets/screen.scss */
+/* line 49, ../../../app/stylesheets/screen.scss */
 body.bp #header {
   border-bottom: 6px double #654b24;
-  padding: 10px 15px 10px 15px;
+  padding: 0px 15px 10px 15px;
   border-top: 0;
 }
-/* line 52, ../../../app/stylesheets/screen.scss */
-body.bp #header h1 {
+/* line 53, ../../../app/stylesheets/screen.scss */
+body.bp #header div.h1 {
   font-size: 2.0em;
   margin: 0;
+  float: left;
 }
-/* line 56, ../../../app/stylesheets/screen.scss */
-body.bp #header h2 {
+/* line 58, ../../../app/stylesheets/screen.scss */
+body.bp #header div.h2 {
   font-size: 1.2em;
+  clear: both;
 }
-/* line 60, ../../../app/stylesheets/screen.scss */
+/* line 62, ../../../app/stylesheets/screen.scss */
+body.bp #header div#session {
+  font-size: 1.2em;
+  margin-top: 10px;
+  float: right;
+}
+/* line 66, ../../../app/stylesheets/screen.scss */
+body.bp #header div#session a.twitter_sign_in {
+  display: inline-block;
+  height: 28px;
+  width: 165px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('/images/twitter_button_2_lo.gif?1306474925');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/* line 71, ../../../app/stylesheets/screen.scss */
+body.bp #header div#session a.twitter_sign_in:hover {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('/images/twitter_button_2_hi.gif?1306474899');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/* line 77, ../../../app/stylesheets/screen.scss */
 body.bp #container {
   padding-top: 10px;
   overflow: visible;
   border-top: 0;
   border-bottom: 0;
 }
-/* line 66, ../../../app/stylesheets/screen.scss */
+/* line 83, ../../../app/stylesheets/screen.scss */
 body.bp #root_footer {
   border-top: 0;
   border-bottom: 0;
 }
-/* line 70, ../../../app/stylesheets/screen.scss */
+/* line 87, ../../../app/stylesheets/screen.scss */
 body.bp #footer {
   text-align: center;
   border-top: 0;
   border-bottom: 0;
 }
-/* line 75, ../../../app/stylesheets/screen.scss */
+/* line 92, ../../../app/stylesheets/screen.scss */
 body.bp #footer_content {
   padding-top: 10px;
   border-top: 6px double #654b24;
   border-bottom: 0;
 }
 
-/* line 82, ../../../app/stylesheets/screen.scss */
+/* line 99, ../../../app/stylesheets/screen.scss */
 .users {
   padding-left: 40px;
   display: inline;
@@ -594,21 +623,21 @@ body.bp #footer_content {
 * html .users {
   overflow-x: hidden;
 }
-/* line 86, ../../../app/stylesheets/screen.scss */
+/* line 103, ../../../app/stylesheets/screen.scss */
 .users button {
   width: 125px;
 }
-/* line 90, ../../../app/stylesheets/screen.scss */
+/* line 107, ../../../app/stylesheets/screen.scss */
 .users input[type=text].invalid {
   border: 1px solid red;
   color: red;
 }
 
-/* line 97, ../../../app/stylesheets/screen.scss */
+/* line 114, ../../../app/stylesheets/screen.scss */
 .tweets button {
   vertical-align: top;
 }
-/* line 100, ../../../app/stylesheets/screen.scss */
+/* line 117, ../../../app/stylesheets/screen.scss */
 .tweets .tweet {
   border: 1px solid #ccc;
   padding: 5px 10px 5px 5px;
@@ -621,34 +650,34 @@ body.bp #footer_content {
   background: url(../images/ui-bg_fine-grain_10_f8f7f6_60x60.png) 50% 50% repeat;
   clear: both;
 }
-/* line 112, ../../../app/stylesheets/screen.scss */
+/* line 129, ../../../app/stylesheets/screen.scss */
 .tweets .image {
   margin-right: 4px;
   float: left;
 }
-/* line 116, ../../../app/stylesheets/screen.scss */
+/* line 133, ../../../app/stylesheets/screen.scss */
 .tweets .header {
   font-weight: bold;
   float: left;
 }
-/* line 120, ../../../app/stylesheets/screen.scss */
+/* line 137, ../../../app/stylesheets/screen.scss */
 .tweets .time {
   float: right;
 }
-/* line 123, ../../../app/stylesheets/screen.scss */
+/* line 140, ../../../app/stylesheets/screen.scss */
 .tweets .text {
   margin-left: 52px;
   clear: right;
 }
 
-/* line 129, ../../../app/stylesheets/screen.scss */
+/* line 146, ../../../app/stylesheets/screen.scss */
 label, span.label, input[type=text], input[type=password], select, textarea {
   color: #654b24;
   font-weight: bold;
   font-size: 1.3em;
 }
 
-/* line 135, ../../../app/stylesheets/screen.scss */
+/* line 152, ../../../app/stylesheets/screen.scss */
 input[type=text], input[type=password], textarea {
   padding: 3px;
   border: 1px solid #c2c2c2;
@@ -658,7 +687,7 @@ input[type=text], input[type=password], textarea {
   background: -webkit-gradient(linear, left top, left 18, from(white), color-stop(4%, #f8f8f8), to(white));
   background: -moz-linear-gradient(top, white, #f8f8f8 1px, white 18px);
 }
-/* line 144, ../../../app/stylesheets/screen.scss */
+/* line 161, ../../../app/stylesheets/screen.scss */
 input[type=text] :focus, input[type=password] :focus, textarea :focus {
   border-color: #0d88d8;
   box-shadow: rgba(0, 114, 188, 0.65) 0px 0px 6px;
@@ -669,7 +698,7 @@ input[type=text] :focus, input[type=password] :focus, textarea :focus {
 }
 
 /**** Isotope CSS3 transitions ****/
-/* line 159, ../../../app/stylesheets/screen.scss */
+/* line 176, ../../../app/stylesheets/screen.scss */
 .isotope,
 .isotope .isotope-item {
   -webkit-transition-duration: 0.8s;
@@ -677,14 +706,14 @@ input[type=text] :focus, input[type=password] :focus, textarea :focus {
   transition-duration: 0.8s;
 }
 
-/* line 165, ../../../app/stylesheets/screen.scss */
+/* line 182, ../../../app/stylesheets/screen.scss */
 .isotope {
   -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
   transition-property: height, width;
 }
 
-/* line 171, ../../../app/stylesheets/screen.scss */
+/* line 188, ../../../app/stylesheets/screen.scss */
 .isotope .isotope-item {
   -webkit-transition-property: -webkit-transform, opacity;
   -moz-transition-property: -moz-transform, opacity;

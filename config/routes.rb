@@ -2,7 +2,14 @@ Subtweet::Application.routes.draw do
   match 'rate_limit' => 'rate_limit#index'
   match 'lookup/:screen_name' => 'welcome#lookup'
   match 'tweets/:screen_name' => 'tweets#index'
-  match '/*names' => 'welcome#index'
+
+  match "/auth/:provider/callback" => "sessions#create"
+  match "/signout" => "sessions#destroy", :as => :signout
+
+
+
+  match '/^(auth)*names' => 'welcome#index'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

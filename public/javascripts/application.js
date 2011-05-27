@@ -1,5 +1,4 @@
 jQuery(function($) {
-  $('.empty_tweep').focus();
 
   $('.tweets').isotope({
     itemSelector : '.tweet',
@@ -29,6 +28,7 @@ jQuery(function($) {
     load_tweets(this, false);
   });
 
+  $('.empty_tweep').focus();
 });
 
 function load_tweets(t, add_container) {

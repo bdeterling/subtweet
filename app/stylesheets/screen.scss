@@ -12,6 +12,7 @@
 @import "partials/form";
 @import "partials/overrides";
 @import "compass/layout/sticky-footer";
+@import "compass/utilities/text/replacement";
 @include sticky-footer(45px);
 
 $lightGray: rgb(194,194,194);
@@ -47,14 +48,30 @@ body.bp {
 
   #header {
     border-bottom: 6px double $text-color;
-    padding: 10px 15px 10px 15px;
+    padding: 0px 15px 10px 15px;
     border-top: 0;
-    h1 {
+    div.h1 {
       font-size: 2.0em;
       margin: 0;
+      float: left;
     }
-    h2 {
+    div.h2 {
       font-size: 1.2em;
+      clear: both;
+    }
+    div#session {
+      font-size: 1.2em;
+      margin-top: 10px;
+      float: right;
+      a.twitter_sign_in {
+        display: inline-block;
+        height: 28px;
+        width: 165px;
+        @include replace-text('twitter_button_2_lo.gif');
+        &:hover {
+          @include replace-text('twitter_button_2_hi.gif');
+        }
+      }
     }
   } 
   #container {

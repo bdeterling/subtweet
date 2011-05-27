@@ -14,8 +14,16 @@
   <body class="bp">
     <div id="root" class="ui-state-highlight">
       <div id="header" class="ui-state-highlight1">
-        <h1>#subtweet</h1>
-        <h2>Discover those under the surface tweets...</h2>
+        <div class="h1">#subtweet</div>
+        <div id="session">
+          <% if current_user %>
+            Welcome <%= current_user.name %>!
+            <%= link_to "Sign Out", signout_path %>
+          <% else %>
+            <%= link_to "Sign in with Twitter", "/auth/twitter", :class => 'twitter_sign_in' %>
+          <% end %>
+        </div>
+        <div class="h2">Discover those under the surface tweets...</div>
       </div>
       <div id="container" class="ui-state-highlight1">
         <%= yield %>
