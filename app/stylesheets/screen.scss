@@ -57,6 +57,7 @@ body.bp {
     }
     div.h2 {
       font-size: 1.2em;
+      margin-left: 5px;
       clear: both;
     }
     div#session {
@@ -193,3 +194,4 @@ input[type=text], input[type=password], textarea {
 
 /* End: Recommended Isotope styles */
 
+.foo { font-weight: bold }

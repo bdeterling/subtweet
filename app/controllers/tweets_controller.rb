@@ -5,7 +5,7 @@ class TweetsController < ApplicationController
       raise "Account not found"
       return
     end
-    @tweets = @account.last_n_tweets(5)
+    @tweets = @account.last_n_tweets(current_user, 5)
     render :layout => false, :content_type => 'text/html'
   end
 end
